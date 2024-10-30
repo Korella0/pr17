@@ -1,0 +1,26 @@
+﻿<UserControl x:Class="pr17.Rate"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:pr17"
+             mc:Ignorable="d" 
+             d:DesignHeight="180" d:DesignWidth="300">
+    <Grid Margin="15">
+        <StackPanel>
+            <TextBlock Text="Выберите оценку" FontWeight="Bold" FontSize="18" HorizontalAlignment="Center"/>
+            <StackPanel Orientation="Horizontal">
+                <RadioButton GroupName="1" x:Name="Rad1" FontSize="16" Content="1" Checked="Rad1_Checked"/>
+                <RadioButton GroupName="2" x:Name="Rad2" FontSize="16" Content="2" Checked="Rad2_Checked"/>
+                <RadioButton GroupName="3" x:Name="Rad3" FontSize="16" Content="3" Checked="Rad3_Checked"/>
+                <RadioButton GroupName="4" x:Name="Rad4" FontSize="16" Content="4" Checked="Rad4_Checked"/>
+                <RadioButton GroupName="5" x:Name="Rad5" FontSize="16" Content="5" Checked="Rad5_Checked"/>
+            </StackPanel>
+            <Button Background="GhostWhite" x:Name="Baton" Height="25" Width="135" Margin="15" Content="Очистить выбор" Click="Baton_Click"/>
+            <TextBox Height="30" Name="test" Background="GhostWhite"/>
+        </StackPanel>
+
+        
+
+    </Grid>
+</UserControl>
